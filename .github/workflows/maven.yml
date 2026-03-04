@@ -21,5 +21,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Execute Tests
-      run: mvn clean test -DsuiteXmlFile=testng.xml
+      run: mvn clean test -Dtestng=testng
       working-directory: api-automation
