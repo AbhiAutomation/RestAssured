@@ -28,6 +28,9 @@ jobs:
       run: mvn clean test -Dtestng=testng
       working-directory: api-automation
 
+    - name: Show files
+      run: ls -R
+
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v7.0.0
       with:
