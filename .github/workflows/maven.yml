@@ -22,3 +22,4 @@ jobs:
         cache: maven
     - name: Execute Tests
       run: mvn clean test -DsuiteXmlFile=testng.xml
+      working-directory: api-automation
